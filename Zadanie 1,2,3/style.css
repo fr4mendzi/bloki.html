@@ -1,28 +1,58 @@
-header {
-    background-color: blue;
-    color: white;
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    background: #f6f6f6;
+    color: #222;
+}
+
+/* Page layout: main + aside two-column responsive */
+body > main,
+body > aside {
     padding: 20px;
-    text-align: center;
+    background: #fff;
+    margin: 10px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
-nav {
-    background-color: gray;
-    padding: 15px;
-    text-align: center;
+
+/* Create a flexible container that holds main + aside */
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
+
 main {
-    background-color: yellow;
-    padding: 20px;
-    font-size: 18px;
-    min-height: 150px;
+    flex: 1 1 60%; /* grow, shrink, basis */
+    min-width: 260px;
 }
-footer {
-    background-color: red;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+aside {
+    flex: 0 0 280px; /* fixed-ish sidebar width on larger screens */
+    min-width: 220px;
 }
+
+/* Headings */
+h1, h2 {
+    margin-top: 0;
+}
+
+/* Make it stack nicely on small screens */
+@media (max-width: 740px) {
+    body {
+        display: block;
+        padding: 10px;
+    }
+    body > main, body > aside {
+        margin: 8px 0;
+    }
+}
+
+/* Optional small utilities */
+p { margin: 0 0 1em 0; }

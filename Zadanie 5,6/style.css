@@ -1,0 +1,28 @@
+main {
+  float: left;
+  width: 65%;
+  background-color: white;
+  min-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px dashed #ccc; /* opcjonalnie dla wyglądu jak na obrazku */
+}
+
+aside {
+  float: right;
+  width: 32%;
+  background-color: #f5f5f5;
+  min-height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px dashed #ccc; /* opcjonalnie dla wyglądu jak na obrazku */
+}
+
+footer {
+  clear: both;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}

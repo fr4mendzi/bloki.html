@@ -1,0 +1,13 @@
+.kolumna {
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+    padding: 20px;
+    border: 2px solid #4CAF50; /* można zmienić kolor */
+    background-color: #e6ffff; /* tło – dowolne */
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
